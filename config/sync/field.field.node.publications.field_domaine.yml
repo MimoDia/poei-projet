@@ -1,0 +1,21 @@
+uuid: a4f8401e-0ed9-46c2-8151-76501f49e306
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_domaine
+    - node.type.publications
+  module:
+    - text
+id: node.publications.field_domaine
+field_name: field_domaine
+entity_type: node
+bundle: publications
+label: Domaine
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text

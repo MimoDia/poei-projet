@@ -1,0 +1,61 @@
+uuid: f90dfe6f-823b-4b2a-adc1-7259be445910
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.publications.field_date_de_publication
+    - field.field.node.publications.field_domaine
+    - field.field.node.publications.field_obtenir_la_brochure
+    - field.field.node.publications.field_resume_de_la_publication
+    - field.field.node.publications.field_revue_scientifique
+    - node.type.publications
+  module:
+    - datetime
+    - file
+    - text
+    - user
+id: node.publications.default
+targetEntityType: node
+bundle: publications
+mode: default
+content:
+  field_date_de_publication:
+    weight: 1
+    label: above
+    settings:
+      format_type: medium
+      timezone_override: ''
+    third_party_settings: {  }
+    type: datetime_default
+    region: content
+  field_domaine:
+    weight: 0
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
+    region: content
+  field_obtenir_la_brochure:
+    weight: 3
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: file_default
+    region: content
+  field_resume_de_la_publication:
+    weight: 4
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
+    region: content
+  field_revue_scientifique:
+    weight: 2
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    type: entity_reference_label
+    region: content
+hidden:
+  links: true

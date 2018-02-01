@@ -1,0 +1,30 @@
+uuid: 8ae8842e-4082-4fd3-8ad5-8e18b46d940c
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.salles
+  module:
+    - system
+    - views
+  theme:
+    - bartik
+id: views_block__salles_block_1
+theme: bartik
+region: sidebar_first
+weight: -7
+provider: null
+plugin: 'views_block:salles-block_1'
+settings:
+  id: 'views_block:salles-block_1'
+  label: ''
+  provider: views
+  label_display: visible
+  views_label: ''
+  items_per_page: none
+visibility:
+  request_path:
+    id: request_path
+    pages: '<front>'
+    negate: false
+    context_mapping: {  }

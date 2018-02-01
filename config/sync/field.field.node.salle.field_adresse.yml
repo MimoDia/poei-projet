@@ -1,0 +1,21 @@
+uuid: 59330619-7894-4673-bb59-d7372c14c57e
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_adresse
+    - node.type.salle
+  module:
+    - text
+id: node.salle.field_adresse
+field_name: field_adresse
+entity_type: node
+bundle: salle
+label: Adresse
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text

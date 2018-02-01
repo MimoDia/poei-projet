@@ -1,0 +1,20 @@
+uuid: dc149dda-fe77-4563-a2d9-534fa870227e
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+    - text
+id: node.field_type_d_emploi
+field_name: field_type_d_emploi
+entity_type: node
+type: text
+settings:
+  max_length: 50
+module: text
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false
