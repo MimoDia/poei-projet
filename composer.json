@@ -21,7 +21,13 @@
         "drupal/console": "^1.5",
         "drupal/geolocation": "^1.11",
         "drupal/facets": "^1.0",
-        "drupal/search_api": "^1.6"
+        "drupal/search_api": "^1.6",
+        "drupal/paragraphs": "^1.2",
+        "drupal/video_embed_field": "^1.5",
+        "drupal/entity_reference_revisions": "^1.4",
+        "drupal/bat_api": "^1.0",
+        "drupal/bat": "^1.0",
+        "drupal/services": "^4.0"
     },
     "replace": {
         

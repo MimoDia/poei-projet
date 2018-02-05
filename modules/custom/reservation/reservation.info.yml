@@ -1,0 +1,5 @@
+name: reservation
+type: module
+description: module of booking university rooms
+core: 8.x
+package: 'university'
