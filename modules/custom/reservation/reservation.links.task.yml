@@ -1,0 +1,11 @@
+# reservation.reservation: 
+#   title: Hi
+#   route_name: reservation.reservation
+#   base_route: reservation.reservation
+#   weight: 1
+
+# reservation.reservationnode: 
+#   title: 'Node Reservation list'
+#   route_name: reservation.reservationnodelist
+#   base_route: reservation.reservation
+#   weight: 2

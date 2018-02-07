@@ -14,7 +14,7 @@ provider: null
 plugin: page_title_block
 settings:
   id: page_title_block
-  label: ' Nous contacter'
+  label: Title
   provider: core
-  label_display: visible
+  label_display: '0'
 visibility: {  }

@@ -1,17 +1,17 @@
-uuid: dc149dda-fe77-4563-a2d9-534fa870227e
+uuid: ee648dcb-6e05-4adb-8544-de9dee7a376a
 langcode: en
 status: true
 dependencies:
   module:
     - node
-    - text
+    - taxonomy
 id: node.field_type_d_emploi
 field_name: field_type_d_emploi
 entity_type: node
-type: text
+type: entity_reference
 settings:
-  max_length: 50
-module: text
+  target_type: taxonomy_term
+module: core
 locked: false
 cardinality: 1
 translatable: true

@@ -11,7 +11,7 @@ id: user.user.field_garde
 field_name: field_garde
 entity_type: user
 bundle: user
-label: Garde
+label: Grade
 description: ''
 required: true
 translatable: false

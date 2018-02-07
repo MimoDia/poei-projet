@@ -1,17 +1,16 @@
-uuid: 84ad3f21-2f10-49fa-a135-361b7564d8ac
+uuid: 45040e46-e1dc-47db-acec-d6b7539970ff
 langcode: en
 status: true
 dependencies:
   module:
+    - geolocation
     - node
-    - text
 id: node.field_adresse
 field_name: field_adresse
 entity_type: node
-type: text
-settings:
-  max_length: 255
-module: text
+type: geolocation
+settings: {  }
+module: geolocation
 locked: false
 cardinality: 1
 translatable: true

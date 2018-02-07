@@ -1,8 +1,8 @@
 definitions:
   contact__site_page:
-    menu_name: main
+    weight: -45
     parent: ''
-    weight: 0
+    menu_name: main
     expanded: false
     enabled: true
   standard__front_page:

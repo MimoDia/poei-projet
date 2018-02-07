@@ -1,35 +1,13 @@
 <?php
+use \Drupal\core\Url;
 
-/**
- * @file
- * Contains reservation.module.
- */
-
-use Drupal\Core\Routing\RouteMatchInterface;
-
-/**
- * Implements hook_help().
- */
-function reservation_help($route_name, RouteMatchInterface $route_match) {
-  switch ($route_name) {
-    // Main module help for the reservation module.
-    case 'help.page.reservation':
-      $output = '';
-      $output .= '<h3>' . t('About') . '</h3>';
-      $output .= '<p>' . t('module of booking university rooms') . '</p>';
-      return $output;
-
-    default:
-  }
+function reservation_user_login($account){
+ //option 1
+drupal_set_message(t('Welcome dear %name!', array('%name' =>$account->getAccountName())));
+  \Drupal::service('cache_tags.invalidator')->invalidateTags(['sessions']);
 }
 
-/**
- * Implements hook_theme().
- */
-function reservation_theme() {
-  return [
-    'reservation' => [
-      'render element' => 'children',
-    ],
-  ];
+function reservation_user_logout($account){
+ \Drupal::service('cache_tags.invalidator')->invalidateTags(['sessions']);
+ 
 }

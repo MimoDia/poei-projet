@@ -10,6 +10,7 @@ dependencies:
     - field.field.user.user.user_picture
     - image.style.thumbnail
   module:
+    - chosen_field
     - image
     - user
 _core:
@@ -19,8 +20,25 @@ targetEntityType: user
 bundle: user
 mode: default
 content:
-  field_nom:
+  account:
+    weight: 3
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  field_departement:
+    type: chosen_select
+    weight: 4
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  field_garde:
+    type: chosen_select
     weight: 5
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  field_nom:
+    weight: 0
     settings:
       size: 60
       placeholder: ''
@@ -28,7 +46,7 @@ content:
     type: string_textfield
     region: content
   field_prenom:
-    weight: 4
+    weight: 1
     settings:
       size: 60
       placeholder: ''
@@ -44,9 +62,6 @@ content:
       preview_image_style: thumbnail
     third_party_settings: {  }
 hidden:
-  account: true
   contact: true
-  field_departement: true
-  field_garde: true
   language: true
   timezone: true

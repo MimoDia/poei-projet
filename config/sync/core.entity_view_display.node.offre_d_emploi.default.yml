@@ -24,18 +24,20 @@ content:
     type: text_default
     region: content
   field_titre_de_l_offre:
-    weight: 101
+    weight: 105
     label: above
-    settings: {  }
+    settings:
+      link_to_entity: false
     third_party_settings: {  }
-    type: text_default
+    type: string
     region: content
   field_type_d_emploi:
-    weight: 102
+    weight: 106
     label: above
-    settings: {  }
+    settings:
+      link: true
     third_party_settings: {  }
-    type: text_default
+    type: entity_reference_label
     region: content
   field_type_de_contrat:
     weight: 104
@@ -48,4 +50,6 @@ content:
   links:
     weight: 100
     region: content
+    settings: {  }
+    third_party_settings: {  }
 hidden: {  }

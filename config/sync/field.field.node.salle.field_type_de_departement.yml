@@ -6,6 +6,8 @@ dependencies:
     - field.storage.node.field_type_de_departement
     - node.type.salle
     - taxonomy.vocabulary.type_de_departement
+  content:
+    - 'taxonomy_term:type_de_departement:a1775060-64d0-44d7-b092-7317809285ff'
 id: node.salle.field_type_de_departement
 field_name: field_type_de_departement
 entity_type: node
@@ -14,7 +16,9 @@ label: 'Type de département'
 description: ''
 required: false
 translatable: false
-default_value: {  }
+default_value:
+  -
+    target_uuid: a1775060-64d0-44d7-b092-7317809285ff
 default_value_callback: ''
 settings:
   handler: 'default:taxonomy_term'

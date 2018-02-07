@@ -27,7 +27,8 @@
         "drupal/entity_reference_revisions": "^1.4",
         "drupal/bat_api": "^1.0",
         "drupal/bat": "^1.0",
-        "drupal/services": "^4.0"
+        "drupal/services": "^4.0",
+        "drupal/bootstrap": "^3.9"
     },
     "replace": {
         

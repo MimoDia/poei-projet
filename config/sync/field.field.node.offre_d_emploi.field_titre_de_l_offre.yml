@@ -1,12 +1,10 @@
-uuid: 79de94d7-b07b-4539-8600-8d0554a40b35
+uuid: 6fd12d95-0696-46e2-ae2c-2286c9c485b7
 langcode: en
 status: true
 dependencies:
   config:
     - field.storage.node.field_titre_de_l_offre
     - node.type.offre_d_emploi
-  module:
-    - text
 id: node.offre_d_emploi.field_titre_de_l_offre
 field_name: field_titre_de_l_offre
 entity_type: node
@@ -18,4 +16,4 @@ translatable: false
 default_value: {  }
 default_value_callback: ''
 settings: {  }
-field_type: text
+field_type: string

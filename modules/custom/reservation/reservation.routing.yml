@@ -1,0 +1,53 @@
+reservation.reservation:
+  path: '/reservation/{param}'
+  defaults:
+    _title: 'reservation'
+    _controller: '\Drupal\reservation\Controller\ReservationController::content'
+    param: 'no parameter'
+  requirements:
+     _access: 'TRUE'
+
+reservation.reservationnodelist:
+  path: '/reservationnode'
+  defaults:
+    _controller: '\Drupal\reservation\Controller\ReservationListController::content'
+    param: NULL
+  requirements:
+    _access: 'TRUE'
+
+
+# reservation.reservation_form:
+#   path: '/reservation/form/reservation'
+#   defaults:
+#     _form: '\Drupal\reservation\Form\ReservationForm'
+#     _title: 'ReservationForm'
+#   requirements:
+#     _access: 'TRUE'
+  
+
+# reservation.reservation_form:
+#   path: '/reservation/form/reservation'
+#   defaults:
+#     _form: '\Drupal\reservation\Form\ReservationForm'
+#     _title: 'Réservation Formulaire '
+#   requirements:
+#     _access: 'TRUE'
+  
+
+reservation.reservation_form:
+  path: '/reservation/form/reservation'
+  defaults:
+    _form: '\Drupal\reservation\Form\ReservationForm'
+    _title: 'ReservationForm'
+  requirements:
+    _access: 'TRUE'
+  
+
+# reservation.submit_form:
+#   path: '/reservation/form/submit'
+#   defaults:
+#     _form: '\Drupal\reservation\Form\SubmitForm'
+#     _title: 'SubmitForm'
+#   requirements:
+#     _access: 'TRUE'
+  

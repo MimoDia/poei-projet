@@ -1,4 +1,4 @@
-uuid: 59330619-7894-4673-bb59-d7372c14c57e
+uuid: 0c44df16-e53d-40ab-9446-7bf991aa9f77
 langcode: en
 status: true
 dependencies:
@@ -6,7 +6,7 @@ dependencies:
     - field.storage.node.field_adresse
     - node.type.salle
   module:
-    - text
+    - geolocation
 id: node.salle.field_adresse
 field_name: field_adresse
 entity_type: node
@@ -18,4 +18,4 @@ translatable: false
 default_value: {  }
 default_value_callback: ''
 settings: {  }
-field_type: text
+field_type: geolocation
