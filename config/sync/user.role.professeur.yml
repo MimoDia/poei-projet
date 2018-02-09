@@ -7,6 +7,9 @@ label: Professeur
 weight: 3
 is_admin: null
 permissions:
+  - 'access reservation'
+  - 'access reservation process'
+  - 'access reservation save'
   - 'access user profiles'
   - 'administer comment types'
   - 'cancel account'

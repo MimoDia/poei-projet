@@ -1,0 +1,39 @@
+uuid: d8990fd5-f096-41f1-be8c-eede3e1fd1c2
+langcode: en
+status: true
+dependencies:
+  module:
+    - ctools
+    - reservation
+    - user
+  theme:
+    - bartik
+id: reservation_block
+theme: bartik
+region: content
+weight: -4
+provider: null
+plugin: reservation_block
+settings:
+  id: broken
+  label: 'Reservation block'
+  provider: reservation
+  label_display: '0'
+  reservation_process: null
+visibility:
+  'entity_bundle:node':
+    id: 'entity_bundle:node'
+    bundles:
+      salle: salle
+    negate: false
+    context_mapping:
+      node: '@node.node_route_context:node'
+  user_role:
+    id: user_role
+    roles:
+      administrator: administrator
+      professeur: professeur
+      chef_departement: chef_departement
+    negate: false
+    context_mapping:
+      user: '@user.current_user_context:current_user'

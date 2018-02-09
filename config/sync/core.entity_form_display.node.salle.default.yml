@@ -5,6 +5,8 @@ dependencies:
   config:
     - field.field.node.salle.field_adresse
     - field.field.node.salle.field_capacite
+    - field.field.node.salle.field_date_fin_crenaux
+    - field.field.node.salle.field_debut_crenaux
     - field.field.node.salle.field_description_salle
     - field.field.node.salle.field_photos_salle
     - field.field.node.salle.field_type_de_departement
@@ -14,6 +16,7 @@ dependencies:
     - node.type.salle
   module:
     - chosen_field
+    - datetime
     - geolocation
     - image
     - path
@@ -69,6 +72,18 @@ content:
     settings: {  }
     third_party_settings: {  }
     type: chosen_select
+    region: content
+  field_date_fin_crenaux:
+    weight: 27
+    settings: {  }
+    third_party_settings: {  }
+    type: datetime_default
+    region: content
+  field_debut_crenaux:
+    weight: 26
+    settings: {  }
+    third_party_settings: {  }
+    type: datetime_default
     region: content
   field_description_salle:
     weight: 11

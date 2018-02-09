@@ -7,6 +7,9 @@ label: 'Chef département'
 weight: 4
 is_admin: null
 permissions:
+  - 'access reservation'
+  - 'access reservation process'
+  - 'access reservation save'
   - 'access user profiles'
   - 'administer comment types'
   - 'administer users'

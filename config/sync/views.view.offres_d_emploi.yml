@@ -901,7 +901,7 @@ display:
         operator: AND
         groups:
           1: AND
-      use_ajax: false
+      use_ajax: true
       show_admin_links: true
     cache_metadata:
       max-age: 0

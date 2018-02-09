@@ -1,0 +1,21 @@
+uuid: 2d1354ae-65c2-482f-8473-030a140df125
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_date_fin_crenaux
+    - node.type.salle
+  module:
+    - datetime
+id: node.salle.field_date_fin_crenaux
+field_name: field_date_fin_crenaux
+entity_type: node
+bundle: salle
+label: 'date fin crénaux'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: datetime

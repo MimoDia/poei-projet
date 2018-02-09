@@ -1,0 +1,21 @@
+uuid: 273fea0a-27f7-4862-8cee-215e0e3b202c
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_debut_crenaux
+    - node.type.salle
+  module:
+    - datetime
+id: node.salle.field_debut_crenaux
+field_name: field_debut_crenaux
+entity_type: node
+bundle: salle
+label: 'début crénaux'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: datetime

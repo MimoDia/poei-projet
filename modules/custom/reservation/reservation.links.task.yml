@@ -4,8 +4,9 @@
 #   base_route: reservation.reservation
 #   weight: 1
 
-# reservation.reservationnode: 
-#   title: 'Node Reservation list'
-#   route_name: reservation.reservationnodelist
-#   base_route: reservation.reservation
-#   weight: 2
+reservation.reservationnodehistory: 
+  title: Reservation History of room
+  route_name: reservation.history
+  base_route: entity.node.canonical
+  weight: 2
+

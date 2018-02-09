@@ -1,0 +1,20 @@
+uuid: 3befe2a4-4b7b-40ee-8d93-93aadf3eaba4
+langcode: en
+status: true
+dependencies:
+  module:
+    - datetime
+    - node
+id: node.field_date_fin_crenaux
+field_name: field_date_fin_crenaux
+entity_type: node
+type: datetime
+settings:
+  datetime_type: date
+module: datetime
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

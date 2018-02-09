@@ -47,11 +47,6 @@ class SubmitForm extends FormBase {
                 'nid' => $node->id(),
     
             ]);
-    /*// Display result.
-    foreach ($form_state->getValues() as $key => $value) {
-      drupal_set_message($key . ': ' . $value);
-    }
-*/
   }
 
 }

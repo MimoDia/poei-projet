@@ -7,40 +7,22 @@ reservation.reservation:
   requirements:
      _access: 'TRUE'
 
-reservation.reservationnodelist:
-  path: '/reservationnode'
-  defaults:
-    _controller: '\Drupal\reservation\Controller\ReservationListController::content'
-    param: NULL
-  requirements:
-    _access: 'TRUE'
-
-
-# reservation.reservation_form:
-#   path: '/reservation/form/reservation'
+# reservation.reservationnodelist:
+#   path: '/reservationnode'
 #   defaults:
-#     _form: '\Drupal\reservation\Form\ReservationForm'
-#     _title: 'ReservationForm'
+#     _controller: '\Drupal\reservation\Controller\ReservationListController::content'
+#     param: NULL
 #   requirements:
 #     _access: 'TRUE'
-  
 
-# reservation.reservation_form:
-#   path: '/reservation/form/reservation'
-#   defaults:
-#     _form: '\Drupal\reservation\Form\ReservationForm'
-#     _title: 'Réservation Formulaire '
-#   requirements:
-#     _access: 'TRUE'
-  
 
 reservation.reservation_form:
   path: '/reservation/form/reservation'
   defaults:
     _form: '\Drupal\reservation\Form\ReservationForm'
-    _title: 'ReservationForm'
+    _title: 'Formulaire de réservation de la salle'
   requirements:
-    _access: 'TRUE'
+    _permission: 'Access save reservation'
   
 
 # reservation.submit_form:
@@ -49,5 +31,12 @@ reservation.reservation_form:
 #     _form: '\Drupal\reservation\Form\SubmitForm'
 #     _title: 'SubmitForm'
 #   requirements:
-#     _access: 'TRUE'
+#     _permission: 'Access process reservation'
   
+reservation.history:
+  path: '/node/{node}/history'
+  defaults:
+    _controller: '\Drupal\reservation\Controller\ReservationHistoryController::content'
+  requirements:
+    _access: 'TRUE'
+
